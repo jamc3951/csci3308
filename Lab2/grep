@@ -1,0 +1,51 @@
+d4 3
+a6 3
+      [clop clop]
+      [clop clop]
+      [clop clop]
+d9 1
+a9 2
+      [clop clop]
+ 
+d21 1
+a21 1
+  GUARD #1:  You're using coconuts!
+d23 1
+a23 1
+  GUARD #1:  You've got two empty halves of coconut and you're bangin'
+d27 1
+a27 1
+  GUARD #1:  Where'd you get the coconut?
+d29 1
+a29 1
+  GUARD #1:  Found them?  In Mercea?  The coconut's tropical!
+d32 1
+a32 1
+  ARTHUR:  The swallow may fly south with the sun or the house martin
+d35 1
+a35 1
+  GUARD #1:  Are you suggesting coconuts migrate?
+d37 1
+a37 1
+  GUARD #1:  What -- a swallow carrying a coconut?
+d41 1
+a41 1
+      coconut.
+d44 1
+a44 1
+  GUARD #1:  Listen, in order to maintain air-speed velocity, a swallow
+d50 3
+a52 3
+  GUARD #2:  It could be carried by an African swallow!
+  GUARD #1:  Oh, yeah, an African swallow maybe, but not a European
+      swallow, that's my point.
+d56 1
+a56 1
+  GUARD #1:  But then of course African swallows are not migratory.
+d58 1
+a58 1
+  GUARD #1:  So they couldn't bring a coconut back anyway...
+d60 2
+a61 2
+      [clop clop]
+  GUARD #2:  Wait a minute -- supposing two swallows carried it together?

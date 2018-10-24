@@ -1,0 +1,81 @@
+Jamison McGinley
+Justin Adkins 
+
+1.
+mkdir cs3308
+
+2.
+mv cs3308 CSCI3308_104
+cd CSCI3308_104
+
+3.
+unzip Lab_Materials
+
+
+4.
+cd Lab\ Materials/
+ls
+ls -a      ... yes . , .. , and .secrets.txt are hidden
+
+5.
+cd images
+ls -lS      ... Largest file is fightingRalphie.png
+
+6. 
+cd ..
+mkdir tinyData
+cd images
+cp majesticRalpie.png ../tinyData/
+cd ..
+cd textfiles
+ls -lS
+cp aliceinwonderland.txt ../tinyData/
+cd ..
+ls -ltr     ... 4096 bytes
+
+7. 
+zip -r tinyData.zip tinyData/
+ls -ltr     ... 172091 bytes
+
+8. 
+tar -zcvf tinyData.tgz tinyData
+ls -ltr     ... 174848 bytes
+
+9. 
+rm -r tinyData/
+rm tinyData.zip
+
+10. 
+tar -zxvf tinyData.tgz ... options -zxvf for unzip, extract, verbosely, filename (next)
+
+11.
+unzip little1.zip
+unzip little2.zip  ...little2 has a subfolder before the files named little
+
+12. 
+find |grep target.txt   ... path is ./emptyFolders/13/target.txt
+			... full path is /home/CSCI3308_104/Lab_Materials/./emptyFolders/13/target.txt
+13. 
+cd textfiles
+head -5 dracula.txt > MyShortStory
+tail -5 dubliners.txt >> MyShortStory
+
+
+1. sort -k 1 password_demo.txt
+
+2. sort -t: -n -k 4 password_demo.txt
+
+3. grep system password_demo.txt
+
+4. wc password_demo.txt
+
+5. sort -u -t: -k 3 password_demo.txt
+
+6. sort -u -t: 3 password_demo.txt > tmp
+
+7. touch getUniqueGID.sh
+   nano getUniqueGID.sh    ...edit file wc -l tmp
+
+./getUniqueGID.sh   ... permission denied
+chmod +777 getUniqueGID.sh  ... script now runs
+

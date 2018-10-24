@@ -1,0 +1,55 @@
+Jamison McGinley
+Justin Adkins
+
+1.A. diff scene1_v1.txt scene1_v2.txt
+
+B. The > and < characters refer to the file that each line has come from. < from first, > from second.
+
+C. dif -c scene1_v1.txt scene1_v2.txt
+-c adds context to differences , 3 lines by default
+
+2.A. grep -n pigeon scene1_v1.txt 
+
+B. grep -n pigeon <(diff scene1_v1.txt scene1_v2.txt)
+
+3.A. cut -d ":" -f 1 -s scene1_v1.txt
+
+B. cut -d ":" -f 1 -s <(diff scene1_v1.txt scene1_v1.txt)
+
+4. A. uniq -d scene1_v1.txt 
+
+B. diff scene1_v1.txt scene1_v2.txt | cut -d ":" -f 1 -s | sort | grep ">" | uniq -c
+
+
+
+
+
+5. A.1.  sed 's/[^1-9]//g' cryptic.txt
+ 
+A.2.  sed 's/[0-9]/_/g' cryptic.txt
+
+B. sed -r 's/4/a/g' cryptic.txt | sed -r 's/5/s/g' | sed -r 's/3/e/g' | sed -r 's/7/t/g' |sed -r 's/1/i/g'
+ 
+Yes, this can be done without piping, you can make a shell script to run sed -r 's/4/a/g; s/5/s/g; s/3/e/g; s/7/t/g; s/1/i/g; s/0/o/g' cryptic.txt
+
+6. A. 
+egrep -c "[0-9]{3}-[0-9]{4}$" regex_practice_data.txt 
+....767
+
+B. egrep -c "^303-441" regex_practice_data.txt 
+....51
+
+
+7.A. awk 'NR==2,NR==5{print $6/ $2}' pizzaOrders.txt 
+5.6
+5
+5.35714
+5.34091
+
+B.
+awk 'NR==2,NR==5{print ($5/ $2)*100}' pizzaOrders.txt 
+0
+100
+42.8571
+45.4545
+
