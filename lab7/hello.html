@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Hello</title>
+	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+<script>
+	$(document).ready(function() {
+	var url =
+	'https://api.forecast.io/forecast/3cabe419c670d779000e17cb5ced8bf3/40.014984,-105.270546'
+	$.ajax({url:url, dataType:"jsonp"}).then(function(data) {
+	console.log(data)
+	$('#results').text(data.currently.temperature)
+	$('#type').text(data.currently.precipType)
+	$('#apparent_temp').text(data.currently.apparentTemperature)
+
+	})
+	})
+</script>
+</head>
+<body>
+<table style="width:20%" border="1px solid black">
+	<tr>
+    	<th>Stat</th>
+    	<th>Value</th> 
+  	</tr>
+  	<tr>
+    	<td>Temperature</td>
+    	<td><p id="results"></p></td>
+  	</tr>
+  	<tr>
+  		<td>Apparent Temperature</td>
+    	<td><p id="apparent_temp"></p></td> 
+  	</tr>
+  	<tr>
+  	  <td>Precipitation Type</td>
+  	  <td><p id="type"></p></td> 
+  	</tr>
+</table>
+<p>Hello, world.</p>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!-- insert name here -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form</title>
+
+    <style type="text/css">
+        *{
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        select{
+            margin-left: 30px;
+            margin-bottom: 30px;
+            height: 40px;
+            background-color: gray;
+            color: white;
+        }
+        h5{
+            font-weight: bold;
+        }
+        #volvo
+        {
+            background-color: white;
+            color: black;
+        }
+        #saab
+        {
+            background-color: white;
+            color: black;
+        }
+        #opel
+        {
+            background-color: white;
+            color: black;
+        }
+        #audi
+        {
+            background-color: white;
+            color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1> This is a sample form. </h1><br>
+    <h5>NickName</h5>
+            <textarea style="width:80%;height:40px;resize: none;color:gray;margin-left: 30px;margin-bottom: 30px;">Enter NickName</textarea>
+      <h5>Email Address</h5>
+            <textarea style="width:80%;height:40px;resize: none;color:gray;margin-left: 30px;margin-bottom: 30px;">Enter email</textarea>
+      <h5>Password</h5>                          
+            <textarea style="width:80%;height:40px;resize: none;color:gray;margin-left: 30px;margin-bottom: 30px;">Password</textarea>
+        <h5>Favorite Activites</h5>
+        <form action="/action_page.php">
+            <input type="checkbox" name="1" value="a"> Watching The Office   
+            <input type="checkbox" name="2" value="b"> Eating Beets   
+            <input type="checkbox" name="3" value="c"> Watching Friends   
+            <input type="checkbox" name="4" value="d"> Watching NBA   
+            <input type="checkbox" name="5" value="e"> Exploring the Universe with Rick              
+        </form>
+          <h5>Gender</h5>
+        <form action="/action_page.php" style="vertical-align: middle;">
+              <input type="radio" name="gender" value="male"> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+
+        </form>
+          <h5>Friends</h5>
+            <select>
+              <option selected disabled hidden id="top">Click here to view friends list</option>
+              <option id="volvo">Sam Smith</option>
+              <option id="saab">Chandler Bing</option>
+              <option id="opel">Dwight Schrute</option>
+              <option id="audi">Morty Smith</option>
+            </select>
+        </div>
+        <h5>Additional Information</h5>
+        <p>About Me</p>
+            <textarea style="width:80%;height:60px;margin-left: 30px;margin-bottom: 30px;"></textarea><br>
+            <button type="button" style="background-color:green;color:white;margin-left:30px;">Submit</button>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

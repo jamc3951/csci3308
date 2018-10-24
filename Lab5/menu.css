@@ -1,0 +1,64 @@
+/* Changes made:
+Colors
+Title - name of tab
+Rounded corners on menu
+Margin and padding in info div
+highlight hover section
+Borders around info sections
+*/
+div {
+    background-color: azure;
+    border: 2px solid black;
+    
+}
+div:hover{
+	background-color: yellow;
+}
+div#divmenu {
+    width: 20%;
+    background-color: red;
+    float: left;
+    position: fixed;
+}
+div#div1{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 25px;
+}
+div#div2{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 25px;
+}
+div#div3{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 25px;
+}
+div#div4{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 25px;
+}
+div#divinfo{
+   float: right;
+   margin: 5px;
+   width: 78%;
+
+}
+div#div5{
+   padding: 10px;
+}
+div#div6{
+   padding: 10px;
+}
+div#div7{
+   padding: 10px;
+}
+div#div8{
+   padding: 10px;
+}

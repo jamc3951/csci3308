@@ -1,0 +1,74 @@
+Lab 5 Solutions
+Jamison McGinley
+Comment: Justin Adkins
+
+1.  div#div1{
+    background-color:red
+    }
+
+2.  Margin adds a space between div elements
+	Padding increases the outer layer size of the div elements
+div {
+    border: 2px solid black;
+    height: 100px;
+    margin: 50px;
+    padding: 50px;
+    width: 100px;
+}
+
+3. <p style="
+    background-color: yellow;
+    padding: 150px;
+    margin: 150px;
+">
+            1
+        </p>
+  If the margin >100px the paragraph moves outside the div and loses its color. If the padding is >100 px its expands beyond the div and recieves its color. 
+
+
+4. Scroll: scroll bars appear allowing view of all overflow sections inside div
+
+Hidden: div is locked to current section of paragraph and there is no way to view other sections
+
+5.div {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    float: left;
+}  
+Applies to all divs. Order = 1,2,3  ...left aligned
+
+div {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    float: left;
+}  
+Order = 3,2,1 ...also all divs move right
+
+6. 3 combinations float left and clear right on for x only:
+div1:  1 _______3 2
+
+div2:  _________1          [I'm drawing the config here]
+	   2 _______3
+
+div3:  ________2 1
+	   3 _______ 
+
+7. div#div1 {
+    float: left;
+}
+	div#div2 {
+    float: left;
+}
+	div#div3 {
+    float: left;
+    clear: left;
+}
+
+8. 
+element.style {
+    margin: 0px;
+}
+
+0px makes the body hug the edge of the window, there is no margin. The default margin is nonzero (8px).

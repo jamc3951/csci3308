@@ -1,0 +1,7 @@
+
+
+Q: What are the things needed for Bootstrap to be loaded?
+A: In order for Bootstrap to be loaded, it requires a Bootstrap CSS file for style, and scripts for jquery, popper.js, and minified bootstrap javascript. These specify versions and grab required libraries/templates/plugins.
+
+Q: How does Bootstrap’s Grid system work?
+A: Bootstrap's grid system allows you to organize containers (or a single container) into square/rectangular spaces that are indicated via sets of intersecting horizontal and vertical lines. You are limited to creating 12 columns however, but unlimited rows. The container acts as a wrapper to contain all of the content created by/in the intersections of the rows and columns. 
